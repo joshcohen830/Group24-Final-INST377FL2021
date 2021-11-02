@@ -1,5 +1,5 @@
 /* Group24 */
-/*Adeyinka Telli Lab 9*/
+/* Lab 9 - Betzalel Moskowitz*/
 
 import express from "express";
 import sequelize from "sequelize";
