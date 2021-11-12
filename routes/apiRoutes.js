@@ -1,9 +1,5 @@
 /* Group24 */
-// Name: Ali
-
-////////////////////////////////////////
-//////ENDPOINT FOR PRESIDENT TABLE//////
-////////////////////////////////////////
+// Name: Betz
 
 import express from "express";
 import sequelize from "sequelize";
