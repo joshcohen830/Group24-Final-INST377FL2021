@@ -35,6 +35,33 @@
     </div>
     <script src="script.js"></script>
     <script type="text/javascript">
+        //Move this to external javascript final
+        async function fetchText() {
+          let response = await fetch('/readme.txt');
+          console.log(response.status); // 200
+          console.log(response.statusText); // OK
+
+          if (response.status === 200) {
+              let data = await response.text();
+              }
+          data = fetchText();
+          console.log(data)
+            };
+
+        function addEndYears(data){
+            for (let i = 0; i <= data.length; i++){
+                if (i < data.length-1) {
+                  data[i]['end_term'] = data[i+1].elected_year
+                  //data[i]['End'] = data[i+1].elected_year
+                }
+              data[0].elected_year = 1789
+    }
+};
+//Adjust Washington's Elected Year
+//addEndYears(data);
+//console.log(data)
+
+
         // We will need to create a front-end endpoint to the API to get the data on the timeline
         const timelineJson = {
               "title": {
@@ -44,8 +71,8 @@
                     "credit": "flickr/<a href='https://www.flickr.com/photos/193081436@N05/51258710166/in/photolist-2m6yhGW-2kYckJf-28sQVu7-9rRwTy-2iVaTF6-9rNyzV-26NonZh-2kd2EvU-2kHipW6-8fth1m-e1CoEo-2abiMDv-P6ZdJK-2a6ztiq-2hA8f3N-2a6zrqh-P6ZaVP-Xv9HAZ-23rw2Ho-2i29Wkc-2btrFfx-2btrFNB-6NXhw2-2kSbRy1-4S1BKD-2iV9VMr-2a6zpPS-DxqCE-DxrMi-2cS6E94-8MebDG-P6Z9JR-2i27wWe-8MPnc3-66Nu82-9Qn6rv-sXE9We-hmyCbm-2i27ua2-2dYpE8f-2iabsoi-nZoEUV-2mdE69a-4ToZHH-AwD3Fx-2iVa5eo-ATqFne-2hX1ijt-SHZb9C-NNdbNG'>Mount Rushmore at sunset</a>"
                   },
                   "text": {
-                    "headline": "Whitney Houston<br/> 1963 - 2012",
-                    "text": "<p>Houston's voice caught the imagination of the world propelling her to superstardom at an early age becoming one of the most awarded performers of our time. This is a look into the amazing heights she achieved and her personal struggles with substance abuse and a tumultuous marriage.</p>"
+                    "headline": "Presidents of the United States",
+                    "text": "A timeline of the presidents of the United States of America.</p>"
                   }
               },
               "events": [
