@@ -31,7 +31,7 @@ router.get("/presidents/:president_id", async (req, res) => {
     // Presidents table query and gets the specific id from the user
     const presidentInfoQuery = `SELECT  
      concat(first_name, " ",last_name) as "President Name", birth_date as "Birth Date",
-      home_state as "Home State", date_inaurg as "Date Inauguration",party as "Party", president_image as "President Image"
+      home_state as "Home State", date_inaurg as "Date Inauguration",party as "Party"
       FROM presidents_table
       WHERE president_id = ${req.params.president_id};`;
     console.log(presidentInfoQuery);
@@ -53,7 +53,7 @@ router.get("/presidents/:president_id", async (req, res) => {
 router.get("/time_line", async (req, res) => {
   try {
     const timeLine = `SELECT 
-president_id, CONCAT(first_name,'',last_name) AS "President Name", CAST((SPLIT_STR(date_inaurg, ',', 2)-1) AS SIGNED) AS elected_year
+president_id, CONCAT(first_name,' ',last_name) AS "President Name", CAST((SPLIT_STR(date_inaurg, ',', 2)-1) AS SIGNED) AS elected_year
 FROM Presidents.presidents_table;`;
     const pres = await db.sequelizeDB.query(timeLine, {
       type: sequelize.QueryTypes.SELECT,
