@@ -5,6 +5,8 @@
     <title>Group Project (Group24)</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/> 
     <link rel="stylesheet" href="styles.css">
+    <link title="timeline-styles" rel="stylesheet" href="https://cdn.knightlab.com/libs/timeline3/latest/css/timeline.css">
+    <script src="https://cdn.knightlab.com/libs/timeline3/latest/js/timeline.js"></script>
   </head>
 
   <body class='p-2'>
@@ -27,11 +29,99 @@
       <h2 class='title is-2 has-text-weight-bold'>Coming Soon...</h2>
     </div>
     <!--Adeyinka adds previous/next buttons-->
-    <div class='contact box p-2 has-background-info-light'>
+    <div id='timeline-embed' class='contact box p-2 has-background-info-light'>
       <h2 class='title is-2 has-text-weight-bold'>Our Interactive Timeline...</h2>
       <p>Will be placed here!</p>
     </div>
     <script src="script.js"></script>
+    <script type="text/javascript">
+        //Move this to external javascript final
+        async function fetchText() {
+          let response = await fetch('/readme.txt');
+          console.log(response.status); // 200
+          console.log(response.statusText); // OK
+
+          if (response.status === 200) {
+              let data = await response.text();
+              }
+          data = fetchText();
+          console.log(data)
+            };
+
+        function addEndYears(data){
+            for (let i = 0; i <= data.length; i++){
+                if (i < data.length-1) {
+                  data[i]['end_term'] = data[i+1].elected_year
+                  //data[i]['End'] = data[i+1].elected_year
+                }
+              data[0].elected_year = 1789
+    }
+};
+//Adjust Washington's Elected Year
+//addEndYears(data);
+//console.log(data)
+
+
+        // We will need to create a front-end endpoint to the API to get the data on the timeline
+        const timelineJson = {
+              "title": {
+                  "media": {
+                    "url": "https://www.flickr.com/photos/193081436@N05/51258710166/in/photolist-2m6yhGW-2kYckJf-28sQVu7-9rRwTy-2iVaTF6-9rNyzV-26NonZh-2kd2EvU-2kHipW6-8fth1m-e1CoEo-2abiMDv-P6ZdJK-2a6ztiq-2hA8f3N-2a6zrqh-P6ZaVP-Xv9HAZ-23rw2Ho-2i29Wkc-2btrFfx-2btrFNB-6NXhw2-2kSbRy1-4S1BKD-2iV9VMr-2a6zpPS-DxqCE-DxrMi-2cS6E94-8MebDG-P6Z9JR-2i27wWe-8MPnc3-66Nu82-9Qn6rv-sXE9We-hmyCbm-2i27ua2-2dYpE8f-2iabsoi-nZoEUV-2mdE69a-4ToZHH-AwD3Fx-2iVa5eo-ATqFne-2hX1ijt-SHZb9C-NNdbNG",
+                    "caption": "History of US Presidents",
+                    "credit": "flickr/<a href='https://www.flickr.com/photos/193081436@N05/51258710166/in/photolist-2m6yhGW-2kYckJf-28sQVu7-9rRwTy-2iVaTF6-9rNyzV-26NonZh-2kd2EvU-2kHipW6-8fth1m-e1CoEo-2abiMDv-P6ZdJK-2a6ztiq-2hA8f3N-2a6zrqh-P6ZaVP-Xv9HAZ-23rw2Ho-2i29Wkc-2btrFfx-2btrFNB-6NXhw2-2kSbRy1-4S1BKD-2iV9VMr-2a6zpPS-DxqCE-DxrMi-2cS6E94-8MebDG-P6Z9JR-2i27wWe-8MPnc3-66Nu82-9Qn6rv-sXE9We-hmyCbm-2i27ua2-2dYpE8f-2iabsoi-nZoEUV-2mdE69a-4ToZHH-AwD3Fx-2iVa5eo-ATqFne-2hX1ijt-SHZb9C-NNdbNG'>Mount Rushmore at sunset</a>"
+                  },
+                  "text": {
+                    "headline": "Presidents of the United States",
+                    "text": "A timeline of the presidents of the United States of America.</p>"
+                  }
+              },
+              "events": [
+                {
+                  "media": {
+                    "url": "{{ static_url }}/img/examples/houston/family.jpg",
+                    "caption": "Houston's mother and Gospel singer, Cissy Houston (left) and cousin Dionne Warwick.",
+                    "credit": "Cissy Houston photo:<a href='http://www.flickr.com/photos/11447043@N00/418180903/'>Tom Marcello</a><br/><a href='http://commons.wikimedia.org/wiki/File%3ADionne_Warwick_television_special_1969.JPG'>Dionne Warwick: CBS Television via Wikimedia Commons</a>"
+                  },
+                  "start_date": {
+                    "year": "1789"
+                  },
+                  "end_date": {
+                    "year": "1797"
+                  },
+                  
+                  "text": {
+                    "headline": "George Washington",
+                    "text": '<p>George Washington (February 22, 1732 – December 14, 1799) was an American soldier, statesman, and Founding Father, who served as the first president of the United States from 1789 to 1797. Appointed by the Continental Congress as commander of the Continental Army, Washington led the Patriot forces to victory in the American Revolutionary War, and presided at the Constitutional Convention of 1787, which established the Constitution of the United States and a federal government. Washington has been called the "Father of the Nation" for his manifold leadership in the formative days of the country..</p>'
+                  }
+                }, 
+                {
+                  "media": {
+                    "url": "{{ static_url }}/img/examples/houston/family.jpg",
+                    "caption": "Houston's mother and Gospel singer, Cissy Houston (left) and cousin Dionne Warwick.",
+                    "credit": "Cissy Houston photo:<a href='http://www.flickr.com/photos/11447043@N00/418180903/'>Tom Marcello</a><br/><a href='http://commons.wikimedia.org/wiki/File%3ADionne_Warwick_television_special_1969.JPG'>Dionne Warwick: CBS Television via Wikimedia Commons</a>"
+                  },
+                  "start_date": {
+                    "year": "2020"
+                  },
+                  
+                  "text": {
+                    "headline": "Joseph Biden",
+                    "text": '<p>Joseph Robinette Biden Jr. is an American politician who is the 46th and current president of the United States. A member of the Democratic Party, he served as the 47th vice president from 2009 to 2017 under Barack Obama and represented Delaware in the United States Senate from 1973 to 2009.</p>'
+                  }
+                }, 
+              ]
+          }
+
+        // The TL.Timeline constructor takes at least two arguments:
+        // the id of the Timeline container (no '#'), and
+        // the URL to your JSON data file or Google spreadsheet.
+        // the id must refer to an element "above" this code,
+        // and the element must have CSS styling to give it width and height
+        // optionally, a third argument with configuration options can be passed.
+        // See below for more about options.
+        window.timeline = new TL.Timeline('timeline-embed',
+        timelineJson);
+    </script>
   </body>
 
 

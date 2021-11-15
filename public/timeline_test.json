@@ -1,0 +1,232 @@
+[
+	{
+		"president_id" : 1,
+		"president_name" : "George Washington",
+		"elected_year" : 1788
+	},
+	{
+		"president_id" : 2,
+		"president_name" : "John Adams",
+		"elected_year" : 1796
+	},
+	{
+		"president_id" : 3,
+		"president_name" : "Thomas Jefferson",
+		"elected_year" : 1800
+	},
+	{
+		"president_id" : 4,
+		"president_name" : "James Madison",
+		"elected_year" : 1808
+	},
+	{
+		"president_id" : 5,
+		"president_name" : "James Monroe",
+		"elected_year" : 1816
+	},
+	{
+		"president_id" : 6,
+		"president_name" : "John Quincy Adams",
+		"elected_year" : 1824
+	},
+	{
+		"president_id" : 7,
+		"president_name" : "Andrew Jackson",
+		"elected_year" : 1828
+	},
+	{
+		"president_id" : 8,
+		"president_name" : "Martin Van Buren",
+		"elected_year" : 1836
+	},
+	{
+		"president_id" : 9,
+		"president_name" : "William Henry Harrison",
+		"elected_year" : 1840
+	},
+	{
+		"president_id" : 10,
+		"president_name" : "John Tyler",
+		"elected_year" : 1840
+	},
+	{
+		"president_id" : 11,
+		"president_name" : "James K. Polk",
+		"elected_year" : 1844
+	},
+	{
+		"president_id" : 12,
+		"president_name" : "Zachary Taylor",
+		"elected_year" : 1848
+	},
+	{
+		"president_id" : 13,
+		"president_name" : "Millard Fillmore",
+		"elected_year" : 1849
+	},
+	{
+		"president_id" : 14,
+		"president_name" : "Franklin Pierce",
+		"elected_year" : 1852
+	},
+	{
+		"president_id" : 15,
+		"president_name" : "James Buchanan",
+		"elected_year" : 1856
+	},
+	{
+		"president_id" : 16,
+		"president_name" : "Abraham Lincoln",
+		"elected_year" : 1860
+	},
+	{
+		"president_id" : 17,
+		"president_name" : "Andrew Johnson",
+		"elected_year" : 1864
+	},
+	{
+		"president_id" : 18,
+		"president_name" : "Ulysses S. Grant",
+		"elected_year" : 1868
+	},
+	{
+		"president_id" : 19,
+		"president_name" : "Rutherford B. Hayes",
+		"elected_year" : 1876
+	},
+	{
+		"president_id" : 20,
+		"president_name" : "James A. Garfield",
+		"elected_year" : 1880
+	},
+	{
+		"president_id" : 21,
+		"president_name" : "Chester A. Arthur",
+		"elected_year" : 1880
+	},
+	{
+		"president_id" : 22,
+		"president_name" : "Grover Cleveland",
+		"elected_year" : 1884
+	},
+	{
+		"president_id" : 23,
+		"president_name" : "Benjamin Harrison",
+		"elected_year" : 1888
+	},
+	{
+		"president_id" : 24,
+		"president_name" : "Grover Cleveland",
+		"elected_year" : 1892
+	},
+	{
+		"president_id" : 25,
+		"president_name" : "William McKinley",
+		"elected_year" : 1896
+	},
+	{
+		"president_id" : 26,
+		"president_name" : "Theodore Roosevelt",
+		"elected_year" : 1900
+	},
+	{
+		"president_id" : 27,
+		"president_name" : "William Howard Taft",
+		"elected_year" : 1908
+	},
+	{
+		"president_id" : 28,
+		"president_name" : "Woodrow Wilson",
+		"elected_year" : 1912
+	},
+	{
+		"president_id" : 29,
+		"president_name" : "Warren G. Harding",
+		"elected_year" : 1920
+	},
+	{
+		"president_id" : 30,
+		"president_name" : "Calvin Coolidge",
+		"elected_year" : 1922
+	},
+	{
+		"president_id" : 31,
+		"president_name" : "Herbert Hoover",
+		"elected_year" : 1928
+	},
+	{
+		"president_id" : 32,
+		"president_name" : "Franklin D. Roosevelt",
+		"elected_year" : 1932
+	},
+	{
+		"president_id" : 33,
+		"president_name" : "Harry S. Truman",
+		"elected_year" : 1944
+	},
+	{
+		"president_id" : 34,
+		"president_name" : "Dwight D. Eisenhower",
+		"elected_year" : 1952
+	},
+	{
+		"president_id" : 35,
+		"president_name" : "John F. Kennedy",
+		"elected_year" : 1960
+	},
+	{
+		"president_id" : 36,
+		"president_name" : "Lyndon B. Johnson",
+		"elected_year" : 1962
+	},
+	{
+		"president_id" : 37,
+		"president_name" : "Richard  Nixon",
+		"elected_year" : 1968
+	},
+	{
+		"president_id" : 38,
+		"president_name" : "Gerald  Ford",
+		"elected_year" : 1973
+	},
+	{
+		"president_id" : 39,
+		"president_name" : "Jimmy  Carter",
+		"elected_year" : 1976
+	},
+	{
+		"president_id" : 40,
+		"president_name" : "Ronald  Reagan",
+		"elected_year" : 1980
+	},
+	{
+		"president_id" : 41,
+		"president_name" : "George H. W. Bush",
+		"elected_year" : 1988
+	},
+	{
+		"president_id" : 42,
+		"president_name" : "Bill Clinton",
+		"elected_year" : 1992
+	},
+	{
+		"president_id" : 43,
+		"president_name" : "George W. Bush",
+		"elected_year" : 2000
+	},
+	{
+		"president_id" : 44,
+		"president_name" : "Barack Obama",
+		"elected_year" : 2008
+	},
+	{
+		"president_id" : 45,
+		"president_name" : "Donald Trump",
+		"elected_year" : 2016
+	},
+	{
+		"president_id" : 46,
+		"president_name" : "Joseph Biden",
+		"elected_year" : 2020
+	}
+]
