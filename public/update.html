@@ -141,29 +141,24 @@
         </div>
 
       </div>
-      
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">Child's First Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type first name here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">Child's Last Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type last name here">
-            </div>
-          </div>
-        </div>
-
+     
+     <div class="columns">
+       <div class="column">
+     <div id="newElementId">
+       <label class="label">New Child</label>
       </div>
-    
+
+     <div id="dynamicCheck">
+      <input type="button" value="Add More" onclick="createNewElement();"
+      class="button is-primary"/>
+    </div>
+  </div>
+</div>
+      
+    <div class="columns">
       <button class="button is-primary">Add New President</button>
+    
+    </div>
     </form>
 
     <h2 class='title is-2 has-text-weight-bold'>Update Existing President</h2>
