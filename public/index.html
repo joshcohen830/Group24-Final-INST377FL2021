@@ -39,7 +39,11 @@
               }
           }
           //Adjust Washington's Elected Year
-          data[0].elected_year = 1789
+          data[0].elected_year = 1789;
+          const d = new Date();
+          let year = d.getFullYear();
+          let last_index = data.length-1
+          data[last_index].end_term = year;
       };
 
       function structureData(presidents){
@@ -101,7 +105,7 @@
 
         const options = {
             hash_bookmark: true,
-            initial_zoom: 5,
+            initial_zoom: 5
         }
         const timelineJson = structureData(presidents);
         window.timeline = new TL.Timeline('timeline-embed',
