@@ -1,9 +1,5 @@
 /* Group24 */
-
-////////////////////////////////////////
-//////ENDPOINT FOR PRESIDENT TABLE//////
-////////////////////////////////////////
-
+// Ali
 import express from 'express';
 import sequelize from 'sequelize';
 import db from '../database/initializeDB.js';

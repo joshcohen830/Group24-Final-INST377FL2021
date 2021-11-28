@@ -2,305 +2,72 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Group Project (Group24)</title>
+    <title>Group 24 About Page</title>
+    <link rel="icon" type="image/png" href="/images/american_eagle.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"/> 
     <link rel="stylesheet" href="styles.css">
+
   </head>
 
-  <body class='p-2'>
-  <!--Betz will take care of creating hamburger menu with navbar, including main,about,and update -->
-    <h1 class='title notification has-text-centered has-background-danger-light 
-    has-text-weight-bold'>Update Page</h1>
+        <body>
+            <nav class="navbar is-info">
+                <div class="navbar-brand">
+                  <a class="navbar-item" href="index.html">
+                    <img src="/images/american_eagle.png" width= '40px'>
+                  </a>
+                  <div class="navbar-burger" data-target="navbarExampleIsInfoExample">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+              
+                <div id="navbarExampleIsInfoExample" class="navbar-menu">
+                  <div class="navbar-start">
+                    <div class="navbar-item has-dropdown is-hoverable">
+                      <a class="navbar-link has-text-weight-bold" href="index.html">
+                        Menu
+                      </a>
+                      <div class="navbar-dropdown is-boxed">
+                        <a class="navbar-item" href="index.html">
+                          Home
+                        </a>
+                        <a class="navbar-item" href="update.html">
+                          Update Records
+                        </a>
+                        <a class="navbar-item" href="about.html">
+                          About Us
+                        </a>
+                        <a class="navbar-item" href="login.html">
+                          Login
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+              
+                  <div class="navbar-end">
+                    <div class="navbar-item">
+                      <div class="field is-grouped">
+                        <p class="control">
+                          <a class="button is-info" href="login.html">
+                            <span class="icon">
+                              <i class="fas fa-download"></i>
+                            </span>
+                            <span class ="has-text-weight-bold">Login</span>
+                          </a>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
 
-    <div class='buttons'>
-      <div class='main button is-info'>
-        <nav>
-          <a class='has-text-weight-bold' href="index.html">Main Page</a>
-         </div>
-
-        <div class ='about button is-info'>
-          <a class='has-text-weight-bold' href="about.html">About Page </a>
-        </div>
-
-        <div class ='about button is-info'>
-            <a class='has-text-weight-bold' href="update.html">Update Page </a>
-        </nav>
-       </div>
-    </div>
-
-    <h2 class='title is-2 has-text-weight-bold'>Add New President</h2>
-
-    <form class="box">
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">President ID</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type number here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President First Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type first name here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President Last Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type last name here">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">President Date of Inauguration</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type date here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President age during Inauguration</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type age here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President Birth Date</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type date here">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">President Home State</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type state here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President Party</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type party here">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-
-      <div class="field">
-        <label class="label">First Lady First Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Type first name here">
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">Vice President First Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type first name here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">Vice President Last Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type last name here">
-            </div>
-          </div>
-        </div>
-
-      </div>
-     
-     <div class="columns">
-       <div class="column">
-     <div id="newElementId">
-       <label class="label">New Child</label>
-      </div>
-
-     <div id="dynamicCheck">
-      <input type="button" value="Add More" onclick="createNewElement();"
-      class="button is-primary"/>
-    </div>
-  </div>
-</div>
-      
-    <div class="columns">
-      <button class="button is-primary">Add New President</button>
-    
-    </div>
-    </form>
-
-    <h2 class='title is-2 has-text-weight-bold'>Update Existing President</h2>
-
-    <form class="box">
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">President ID</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type number here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President First Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type first name here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President Last Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type last name here">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">President Date of Inauguration</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type date here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President age during Inauguration</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type age here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President Birth Date</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type date here">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">President Home State</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type state here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">President Party</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type party here">
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-
-      <div class="field">
-        <label class="label">First Lady First Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Type first name here">
-        </div>
-      </div>
-
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">Vice President First Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type first name here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">Vice President Last Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type last name here">
-            </div>
-          </div>
-        </div>
-
-      </div>
-      
-      <div class="columns">
-        <div class="column">
-          <div class="field">
-            <label class="label">Child's First Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type first name here">
-            </div>
-          </div>
-        </div>
-
-        <div class="column">
-          <div class="field">
-            <label class="label">Child's Last Name</label>
-            <div class="control">
-              <input class="input" type="text" placeholder="Type last name here">
-            </div>
-          </div>
-        </div>
-
-      </div>
-    
-      <button class="button is-primary">Update Existing President</button>
-    </form>
-
-    <script src="script.js"></script>
-  </body>
-
-
+            <h1>
+                this page needs to be pushed to main and pulled by everyone.
+            </h1>
+        </body>
+    </head>
 </html>
+
+
+
