@@ -45,7 +45,19 @@ body {
     font-weight: bold !important;
 }
 
+.center_button{
+    display: flex; /* or display:grid */
+    justify-content: center;
+}
 
+.page_title {
+    background-color: rgb(189, 0, 0);
+}
+
+
+#grad {
+    background-image: linear-gradient(to right, rgb(189, 0, 0), white, rgba(0, 0, 216, 0.575));
+  }
 
 /* .tl-timemarker-timespan{
     background-color: darkslateblue;
